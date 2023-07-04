@@ -1,0 +1,17 @@
+[
+    {
+      "title": "Mastering the 30 Push-Up Challenge: A Path to Strength and Endurance",
+      "link": "pages/30-push-ups/index.html",
+      "description": "Learn how to master the 30 push-up challenge and improve your upper body strength and fitness. Follow our step-by-step guide and tips for success.",
+      "photo": "./Pages/30-push-ups/Images/30-pushups.jpg",
+      "type": "Health & Fitness"
+    },
+    {
+      "title": "Effective Abs Workout for a Strong Core",
+      "link": "pages/Abs-Workout/index.html",
+      "description": "Discover the most effective abs workout routines to strengthen your core muscles and achieve a sculpted midsection. Follow our step-by-step guide and expert tips for maximum results.",
+      "photo": "./Pages/Abs-Workout/Images/abs-workout.jpg",
+      "type": "Health & Fitness"
+    }
+  ]
+  

@@ -1,0 +1,80 @@
+/* Apply CSS grid layout to the blog list */
+#blogList {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    grid-gap: 20px;
+  }
+  
+  /* Adjust the layout for mobile */
+  @media (max-width: 767px) {
+    #blogList {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+  
+  /* Style the blog entry */
+  .blog-entry {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  /* Style the blog image */
+  .blog-entry img {
+    width: 100%;
+    margin-top: 2%;
+    height: auto;
+    max-height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+  
+  /* Add hover effect to the blog image */
+  .blog-entry:hover img {
+    transform: scale(1.05);
+  }
+  
+  /* Style the blog overlay */
+  .blog-entry .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.3s ease;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  /* Show the blog overlay on hover */
+  .blog-entry:hover .overlay {
+    opacity: 1;
+  }
+  
+  /* Style the blog title */
+  .blog-entry .overlay .title {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    color: #fff;
+    text-decoration: none;
+    margin-bottom: 10px;
+  }
+  
+  /* Style the blog description */
+  .blog-entry .overlay .description {
+    text-align: center;
+    color: #fff;
+  }
+  
+  /* Style the blog link */
+  .blog-entry .overlay a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
