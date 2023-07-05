@@ -1,5 +1,3 @@
-// script.js
-
 // Fetch the blogs from blogs.json
 fetch('blogs.json')
   .then(response => response.json())
@@ -26,7 +24,6 @@ fetch('blogs.json')
       displayBlogs(filteredBlogs);
     };
 
-   
     // Initial display of all blogs
     displayBlogs(data);
 
@@ -34,33 +31,33 @@ fetch('blogs.json')
     searchBar.addEventListener('input', filterBlogs);
     typeFilter.addEventListener('change', filterBlogs);
   });
-  const displayBlogs = (blogs) => {
-    blogList.innerHTML = '';
-  
-    blogs.forEach(blog => {
-      const blogEntry = document.createElement('div');
-      blogEntry.classList.add('blog-entry');
-  
-      const blogLink = document.createElement('a');
-      blogLink.href = blog.link;
-      blogLink.textContent = blog.title;
-      blogLink.classList.add('blog-title'); // Add a class for styling if needed
-  
-      const blogDescription = document.createElement('p');
-      blogDescription.textContent = blog.description;
-  
-      const blogImageLink = document.createElement('a');
-      blogImageLink.href = blog.link;
-      const blogImage = document.createElement('img');
-      blogImage.src = blog.photo;
-      blogImage.alt = blog.title;
-      blogImageLink.appendChild(blogImage);
-  
-      blogEntry.appendChild(blogImageLink);
-      blogEntry.appendChild(blogLink);
-      blogEntry.appendChild(blogDescription);
-  
-      blogList.appendChild(blogEntry);
-    });
-  };
-  
+
+const displayBlogs = (blogs) => {
+  blogList.innerHTML = '';
+
+  blogs.forEach(blog => {
+    const blogEntry = document.createElement('div');
+    blogEntry.classList.add('blog-entry');
+
+    const blogLink = document.createElement('a');
+    blogLink.href = blog.link;
+    blogLink.textContent = blog.title;
+    blogLink.classList.add('blog-title'); // Add a class for styling if needed
+
+    const blogDescription = document.createElement('p');
+    blogDescription.textContent = blog.description;
+
+    const blogImageLink = document.createElement('a');
+    blogImageLink.href = blog.link;
+    const blogImage = document.createElement('img');
+    blogImage.src = blog.photo;
+    blogImage.alt = blog.title;
+    blogImageLink.appendChild(blogImage);
+
+    blogEntry.appendChild(blogImageLink);
+    blogEntry.appendChild(blogLink);
+    blogEntry.appendChild(blogDescription);
+
+    blogList.appendChild(blogEntry);
+  });
+};

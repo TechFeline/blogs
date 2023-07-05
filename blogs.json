@@ -1,23 +1,23 @@
 [
     {
       "title": "Mastering the 30 Push-Up Challenge: A Path to Strength and Endurance",
-      "link": "Pages/30-push-ups/index.html",
+      "link": "pages/30-push-ups/index.html",
       "description": "Learn how to master the 30 push-up challenge and improve your upper body strength and fitness. Follow our step-by-step guide and tips for success.",
-      "photo": "./Pages/30-push-ups/Images/30-pushups.jpg",
+      "photo": "./pages/30-push-ups/Images/30-pushups.jpg",
       "type": "Health & Fitness"
     },
     {
       "title": "Effective Abs Workout for a Strong Core",
-      "link": "Pages/Abs-Workout/index.html",
+      "link": "pages/Abs-Workout/index.html",
       "description": "Discover the most effective abs workout routines to strengthen your core muscles and achieve a sculpted midsection. Follow our step-by-step guide and expert tips for maximum results.",
-      "photo": "./Pages/Abs-Workout/Images/abs-workout.jpg",
+      "photo": "./pages/Abs-Workout/Images/abs-workout.jpg",
       "type": "Health & Fitness"
     },
     {
       "title": "Exploring the Depths: A Journey into the Fascinating World of Dreams",
-      "link": "Pages/dreams-philosophy/index.html",
+      "link": "pages/dreams-philosophy/index.html",
       "description": "Dreams play a profound role in human experience, offering a gateway to the depths of our unconscious minds.",
-      "photo": "./Pages/dreams-philosophy/Images/dream-world.jpg",
+      "photo": "./pages/dreams-philosophy/Images/dream-world.jpg",
       "type": "Phylosophy"
     }
   ]
